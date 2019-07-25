@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NexMotionProject Version="2.1">
+  <Project>
+    <Devices>
+      <EtherCAT>
+        <EcMaster Type="1" NicIdx="0">
+          <Name>Master - 0</Name>
+          <MacAddress></MacAddress>
+          <ImageDatas>
+          </ImageDatas>
+          <EcSlaves>
+          </EcSlaves>
+        </EcMaster>
+      </EtherCAT>
+    </Devices>
+    <NexMotion>
+      <System>
+        <SystemConfig SimulationEnable="0" OperationMode="0">
+        </SystemConfig>
+        <MotionParaInfos>
+          <MotionParaInfo Type="0" Num="#x0" Sub="0" Value="2000">Motion cycle time (us)</MotionParaInfo>
+          <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="4">Number of activated axis</MotionParaInfo>
+          <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="1">Number of activated group</MotionParaInfo>
+        </MotionParaInfos>
+      </System>
+      <SingleAxis>
+        <AxisModelConfig allHalt="1">
+        </AxisModelConfig>
+        <Axes>
+          <Axis>
+            <VendorId>#x1</VendorId>
+            <VendorName>NEXCOM</VendorName>
+            <AxisConfig>
+              <NMDInfo ProductId="#x2" RevisionNo="#x0">
+                <Name>Templete Yaskawa Sigma 7 EtherCAT Servo drive</Name>
+                <Pitch>1</Pitch>
+                <GearMechanical>1</GearMechanical>
+                <GearMotor>1</GearMotor>
+                <EncoderResolution>1048576</EncoderResolution>
+                <EncoderDirection>0</EncoderDirection>
+                <EncoderType>1</EncoderType>
+                <PosUnitName>degree</PosUnitName>
+                <SyncCommandOption>0</SyncCommandOption>
+                <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                <SoftPositiveLimit SoftPositiveLimitEnable="0">100.000000</SoftPositiveLimit>
+                <SoftNegativeLimit SoftNegativeLimitEnable="0">-100.000000</SoftNegativeLimit>
+                <PicturesPath>Yaskawa Singma 7 EtherCAT Servo.png</PicturesPath>
+                <PicturesHttp>https://www.yaskawa.com/documents/20197/1158068/sigma-7-servo-products-banner-group-shot-200x150.png/57371a6a-fb81-4be3-938a-a35638aa4564?t=1462986785530</PicturesHttp>
+              </NMDInfo>
+              <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                <GUID></GUID>
+                <CoeObjectOffset>#x0</CoeObjectOffset>
+                <PdoMapOffset>#x0</PdoMapOffset>
+              </EcSlave>
+              <MainControlValue>
+                <Position_1>0.000000</Position_1>
+                <Position_2>0.000000</Position_2>
+                <Halt>1</Halt>
+                <P1P2_Repeat>0</P1P2_Repeat>
+                <Dwell>500</Dwell>
+              </MainControlValue>
+              <AllControlValue>
+                <AllPosition>0.000000</AllPosition>
+                <AllVelocity>100.000000</AllVelocity>
+              </AllControlValue>
+            </AxisConfig>
+            <MotionParaInfos>
+              <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="1.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="1">Motor revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="1048576">Encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="1">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="100.000000">Positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="0">Enable positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-100.000000">Negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="0">Enable negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="1200.000000">Maximum velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1200.000000">Maximum acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="100.000000">Acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="100.000000">deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="0">EtherCAT CiA HOME method</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+            </MotionParaInfos>
+          </Axis>
+          <Axis>
+            <VendorId>#x1</VendorId>
+            <VendorName>NEXCOM</VendorName>
+            <AxisConfig>
+              <NMDInfo ProductId="#x2" RevisionNo="#x0">
+                <Name>Templete Yaskawa Sigma 7 EtherCAT Servo drive</Name>
+                <Pitch>1</Pitch>
+                <GearMechanical>1</GearMechanical>
+                <GearMotor>1</GearMotor>
+                <EncoderResolution>1048576</EncoderResolution>
+                <EncoderDirection>0</EncoderDirection>
+                <EncoderType>1</EncoderType>
+                <PosUnitName>degree</PosUnitName>
+                <SyncCommandOption>0</SyncCommandOption>
+                <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                <SoftPositiveLimit SoftPositiveLimitEnable="0">100.000000</SoftPositiveLimit>
+                <SoftNegativeLimit SoftNegativeLimitEnable="0">-100.000000</SoftNegativeLimit>
+                <PicturesPath>Yaskawa Singma 7 EtherCAT Servo.png</PicturesPath>
+                <PicturesHttp>https://www.yaskawa.com/documents/20197/1158068/sigma-7-servo-products-banner-group-shot-200x150.png/57371a6a-fb81-4be3-938a-a35638aa4564?t=1462986785530</PicturesHttp>
+              </NMDInfo>
+              <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                <GUID></GUID>
+                <CoeObjectOffset>#x0</CoeObjectOffset>
+                <PdoMapOffset>#x0</PdoMapOffset>
+              </EcSlave>
+              <MainControlValue>
+                <Position_1>0.000000</Position_1>
+                <Position_2>0.000000</Position_2>
+                <Halt>1</Halt>
+                <P1P2_Repeat>0</P1P2_Repeat>
+                <Dwell>500</Dwell>
+              </MainControlValue>
+              <AllControlValue>
+                <AllPosition>0.000000</AllPosition>
+                <AllVelocity>100.000000</AllVelocity>
+              </AllControlValue>
+            </AxisConfig>
+            <MotionParaInfos>
+              <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="1.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="1">Motor revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="1048576">Encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="1">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="100.000000">Positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="0">Enable positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-100.000000">Negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="0">Enable negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="1200.000000">Maximum velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1200.000000">Maximum acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="100.000000">Acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="100.000000">deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="0">EtherCAT CiA HOME method</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+            </MotionParaInfos>
+          </Axis>
+          <Axis>
+            <VendorId>#x1</VendorId>
+            <VendorName>NEXCOM</VendorName>
+            <AxisConfig>
+              <NMDInfo ProductId="#x2" RevisionNo="#x0">
+                <Name>Templete Yaskawa Sigma 7 EtherCAT Servo drive</Name>
+                <Pitch>1</Pitch>
+                <GearMechanical>1</GearMechanical>
+                <GearMotor>1</GearMotor>
+                <EncoderResolution>1048576</EncoderResolution>
+                <EncoderDirection>0</EncoderDirection>
+                <EncoderType>1</EncoderType>
+                <PosUnitName>degree</PosUnitName>
+                <SyncCommandOption>0</SyncCommandOption>
+                <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                <SoftPositiveLimit SoftPositiveLimitEnable="0">100.000000</SoftPositiveLimit>
+                <SoftNegativeLimit SoftNegativeLimitEnable="0">-100.000000</SoftNegativeLimit>
+                <PicturesPath>Yaskawa Singma 7 EtherCAT Servo.png</PicturesPath>
+                <PicturesHttp>https://www.yaskawa.com/documents/20197/1158068/sigma-7-servo-products-banner-group-shot-200x150.png/57371a6a-fb81-4be3-938a-a35638aa4564?t=1462986785530</PicturesHttp>
+              </NMDInfo>
+              <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                <GUID></GUID>
+                <CoeObjectOffset>#x0</CoeObjectOffset>
+                <PdoMapOffset>#x0</PdoMapOffset>
+              </EcSlave>
+              <MainControlValue>
+                <Position_1>0.000000</Position_1>
+                <Position_2>0.000000</Position_2>
+                <Halt>1</Halt>
+                <P1P2_Repeat>0</P1P2_Repeat>
+                <Dwell>500</Dwell>
+              </MainControlValue>
+              <AllControlValue>
+                <AllPosition>0.000000</AllPosition>
+                <AllVelocity>100.000000</AllVelocity>
+              </AllControlValue>
+            </AxisConfig>
+            <MotionParaInfos>
+              <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="1.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="1">Motor revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="1048576">Encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="1">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="100.000000">Positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="0">Enable positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-100.000000">Negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="0">Enable negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="1200.000000">Maximum velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1200.000000">Maximum acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="100.000000">Acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="100.000000">deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="0">EtherCAT CiA HOME method</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+            </MotionParaInfos>
+          </Axis>
+          <Axis>
+            <VendorId>#x1</VendorId>
+            <VendorName>NEXCOM</VendorName>
+            <AxisConfig>
+              <NMDInfo ProductId="#x1" RevisionNo="#x0">
+                <Name>Templete Yaskawa Sigma 5 EtherCAT Servo drive</Name>
+                <Pitch>1</Pitch>
+                <GearMechanical>1</GearMechanical>
+                <GearMotor>1</GearMotor>
+                <EncoderResolution>1048576</EncoderResolution>
+                <EncoderDirection>0</EncoderDirection>
+                <EncoderType>1</EncoderType>
+                <PosUnitName>degree</PosUnitName>
+                <SyncCommandOption>0</SyncCommandOption>
+                <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                <SoftPositiveLimit SoftPositiveLimitEnable="0">100.000000</SoftPositiveLimit>
+                <SoftNegativeLimit SoftNegativeLimitEnable="0">-100.000000</SoftNegativeLimit>
+                <PicturesPath>Yaskawa Singma 5 EtherCAT Servo.png</PicturesPath>
+                <PicturesHttp>https://www.yaskawa.com/documents/20197/995419/SGDV_EtherCAT-200x150.png/4ca9d1e9-1be4-4e4a-8f44-b37518ffe866?t=1463082689949</PicturesHttp>
+              </NMDInfo>
+              <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                <GUID></GUID>
+                <CoeObjectOffset>#x0</CoeObjectOffset>
+                <PdoMapOffset>#x0</PdoMapOffset>
+              </EcSlave>
+              <MainControlValue>
+                <Position_1>0.000000</Position_1>
+                <Position_2>0.000000</Position_2>
+                <Halt>1</Halt>
+                <P1P2_Repeat>0</P1P2_Repeat>
+                <Dwell>500</Dwell>
+              </MainControlValue>
+              <AllControlValue>
+                <AllPosition>0.000000</AllPosition>
+                <AllVelocity>100.000000</AllVelocity>
+              </AllControlValue>
+            </AxisConfig>
+            <MotionParaInfos>
+              <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="1.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="1">Motor revolution</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="1048576">Encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="1">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="100.000000">Positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="0">Enable positive software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-100.000000">Negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="0">Enable negative software limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="1200.000000">Maximum velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1200.000000">Maximum acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="100.000000">Acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="100.000000">deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="0">EtherCAT CiA HOME method</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+            </MotionParaInfos>
+          </Axis>
+        </Axes>
+      </SingleAxis>
+      <GroupAxis>
+        <Groups>
+          <Group>
+            <VendorId>#x1</VendorId>
+            <VendorName>NEXCOM</VendorName>
+            <GroupConfig>
+              <NMDGroupInfo ProductId="#xd" RevisionNo="#x0" Language="2" Type="1">
+                <Name>Mini-BOT (Third generation)</Name>
+                <PicturesPath>Mini-BOT.png</PicturesPath>
+                <PicturesHttp></PicturesHttp>
+              </NMDGroupInfo>
+              <KpInfos>
+                <KP>
+                  <Name>a1</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>a2</Name>
+                  <Value>27.500000</Value>
+                </KP>
+                <KP>
+                  <Name>a3</Name>
+                  <Value>250.000000</Value>
+                </KP>
+                <KP>
+                  <Name>a4</Name>
+                  <Value>70.000000</Value>
+                </KP>
+                <KP>
+                  <Name>a5</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>a6</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d1 (mm)</Name>
+                  <Value>339.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d2 (mm)</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d3 (mm)</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d4 (mm)</Name>
+                  <Value>250.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d5 (mm)</Name>
+                  <Value>0.000000</Value>
+                </KP>
+                <KP>
+                  <Name>d6 (mm)</Name>
+                  <Value>95.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J1 (Deg)</Name>
+                  <Value>167.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J2 (Deg)</Name>
+                  <Value>200.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J3 (Deg)</Name>
+                  <Value>163.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J4 (Deg)</Name>
+                  <Value>165.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J5 (Deg)</Name>
+                  <Value>105.000000</Value>
+                </KP>
+                <KP>
+                  <Name>PEL-J6 (Deg)</Name>
+                  <Value>180.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J1 (Deg)</Name>
+                  <Value>-167.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J2 (Deg)</Name>
+                  <Value>-2.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J3 (Deg)</Name>
+                  <Value>-153.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J4 (Deg)</Name>
+                  <Value>-165.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J5 (Deg)</Name>
+                  <Value>-105.000000</Value>
+                </KP>
+                <KP>
+                  <Name>MEL-J6 (Deg)</Name>
+                  <Value>-180.000000</Value>
+                </KP>
+              </KpInfos>
+              <CartesianInfos>
+                <Cartesian>
+                  <Index>#x0</Index>
+                  <UnitName>mm</UnitName>
+                </Cartesian>
+                <Cartesian>
+                  <Index>#x1</Index>
+                  <UnitName>mm</UnitName>
+                </Cartesian>
+                <Cartesian>
+                  <Index>#x2</Index>
+                  <UnitName>mm</UnitName>
+                </Cartesian>
+                <Cartesian>
+                  <Index>#x3</Index>
+                  <UnitName>degree</UnitName>
+                </Cartesian>
+                <Cartesian>
+                  <Index>#x4</Index>
+                  <UnitName>degree</UnitName>
+                </Cartesian>
+                <Cartesian>
+                  <Index>#x5</Index>
+                  <UnitName>degree</UnitName>
+                </Cartesian>
+              </CartesianInfos>
+              <GroupControlValue>
+                <FeedRate>60</FeedRate>
+                <Halt>1</Halt>
+                <PtpSpaceType_1>0</PtpSpaceType_1>
+                <PtpSpaceType_2>0</PtpSpaceType_2>
+                <PtpTargetPosition_1>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </PtpTargetPosition_1>
+                <PtpTargetPosition_2>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </PtpTargetPosition_2>
+                <PtpCartTargetPosition_1>
+                  <Position>347.501000</Position>
+                  <Position>5.844000</Position>
+                  <Position>-5.977000</Position>
+                  <Position>0.948000</Position>
+                  <Position>-0.012000</Position>
+                  <Position>-180.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </PtpCartTargetPosition_1>
+                <PtpCartTargetPosition_2>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </PtpCartTargetPosition_2>
+                <LineTargetPosition_1>
+                  <Position>347.501000</Position>
+                  <Position>5.844000</Position>
+                  <Position>-5.977000</Position>
+                  <Position>0.948000</Position>
+                  <Position>-0.012000</Position>
+                  <Position>-180.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </LineTargetPosition_1>
+                <LineTargetPosition_2>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </LineTargetPosition_2>
+                <CircleControlType>0</CircleControlType>
+                <CircleRadius>0.000000</CircleRadius>
+                <CirclePathType>0</CirclePathType>
+                <CircleTargetPosition_1>
+                  <Position>347.501000</Position>
+                  <Position>5.844000</Position>
+                  <Position>-5.977000</Position>
+                  <Position>0.948000</Position>
+                  <Position>-0.012000</Position>
+                  <Position>-180.000000</Position>
+                  <Position>0.000000</Position>
+                  <Position>0.000000</Position>
+                </CircleTargetPosition_1>
+                <CircleAuxOffset>
+                  <Offset>0.000000</Offset>
+                  <Offset>0.000000</Offset>
+                  <Offset>0.000000</Offset>
+                </CircleAuxOffset>
+              </GroupControlValue>
+            </GroupConfig>
+            <MotionParaInfos>
+              <MotionParaInfo Type="0" Num="#x0" Sub="0" Value="1">Kinematics type</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="1" Value="0.000000">a1</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="2" Value="27.500000">a2</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="3" Value="250.000000">a3</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="4" Value="70.000000">a4</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="5" Value="0.000000">a5</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="6" Value="0.000000">a6</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="7" Value="339.000000">d1 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="8" Value="0.000000">d2 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="9" Value="0.000000">d3 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="10" Value="250.000000">d4 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="11" Value="0.000000">d5 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="12" Value="95.000000">d6 (mm)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="13" Value="167.000000">PEL-J1 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="14" Value="200.000000">PEL-J2 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="15" Value="163.000000">PEL-J3 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="16" Value="165.000000">PEL-J4 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="17" Value="105.000000">PEL-J5 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="18" Value="180.000000">PEL-J6 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="19" Value="-167.000000">MEL-J1 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="20" Value="-2.000000">MEL-J2 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="21" Value="-153.000000">MEL-J3 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="22" Value="-165.000000">MEL-J4 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="23" Value="-105.000000">MEL-J5 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x0" Sub="24" Value="-180.000000">MEL-J6 (Deg)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="0">Mechanical couple master axis</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="1" Value="1">Mechanical couple slave axis</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="2" Value="0">Compensation source type</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x1" Sub="3" Value="0.000000">Reference master original position</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x1" Sub="4" Value="1.000000">Couple ratio (numerator)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x1" Sub="5" Value="1.000000">Couple ratio (denominator)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x1" Sub="6" Value="0">Enable mechanical couple compensation</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0:T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="5000.000000">STOP deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="50000.000000">STOP jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode (0:Aborting, 1:Buffered)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Cartesian coordinate motion relative  positioning (0:Absolute, 1: Relative)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Cartesian coordinate motion profile type (0:T-Curve, 1:S-Curve)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Cartesian coordinate motion maximum velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Cartesian coordinate motion accelearation</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">Cartesian coordinate motion deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="10000.000000">Cartesian coordinate motion jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="1">Buffer mode (0:Aborting, 1:Buffered, 2:Blending)</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x36" Sub="1" Value="0">Blending mode(0: CornerDistance, 1: MaxCornerDeviation)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x36" Sub="2" Value="0.000000">Blending corner distance parameter</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x36" Sub="3" Value="0.000000">Blending corner deviation parameter</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x38" Sub="0" Value="0">Coordinate system selection</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x3a" Sub="0" Value="1">Orientation motion independent (0: Dependent; 1: Independent)</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x3b" Sub="0" Value="10.000000">Max. orientation velocity</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x3c" Sub="0" Value="20.000000">Orientation acceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x3d" Sub="0" Value="20.000000">Orientation deceleration</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x3e" Sub="0" Value="10000.000000">Orientation jerk</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="0">Tool coord. system selection</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x81" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x82" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x83" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x84" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x85" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x86" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x87" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x88" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x89" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8a" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8b" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8c" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8d" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8e" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#x8f" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="0" Num="#xc0" Sub="0" Value="0">Product coord. system selection</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc1" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc2" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc3" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc4" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc5" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc6" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc7" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc8" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xc9" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xca" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcb" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcc" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcd" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xce" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="0" Value="0.000000">Offset of MCS X-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="1" Value="0.000000">Offset of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="2" Value="0.000000">Offset of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="3" Value="0.000000">Rotation angle of MCS Z-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="4" Value="0.000000">Rotation angle of MCS Y-Axis</MotionParaInfo>
+              <MotionParaInfo Type="1" Num="#xcf" Sub="5" Value="0.000000">Rotation angle of MCS X-Axis</MotionParaInfo>
+            </MotionParaInfos>
+            <Axes>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 1</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>33</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="1">173.000000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="1">-150.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="33">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="173.000000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="1">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-150.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="1">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="150.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1500.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="20">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="172.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 2</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>33</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="1">200.000000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="1">-2.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="33">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="200.000000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="1">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-2.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="1">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="100.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="1000.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="20">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="196.690000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 3</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>33</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="1">145.000000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="1">-62.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="33">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="145.000000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="1">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-62.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="1">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="280.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="3000.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="22">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="-60.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 4</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>25</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="1">176.500000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="1">-120.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="25">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="176.500000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="1">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-120.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="1">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="500.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="5000.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="20">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="175.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 5</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>20</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="1">105.000000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="1">-105.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="20">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="105.000000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="1">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-105.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="1">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="500.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="5000.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="22">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="-100.440000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+              <Axis>
+                <VendorId>#x1</VendorId>
+                <VendorName>NEXCOM</VendorName>
+                <AxisConfig>
+                  <NMDInfo ProductId="#x0" RevisionNo="#x0">
+                    <Name>Joint 6</Name>
+                    <Pitch>360</Pitch>
+                    <GearMechanical>1</GearMechanical>
+                    <GearMotor>10</GearMotor>
+                    <EncoderResolution>16000</EncoderResolution>
+                    <EncoderDirection>0</EncoderDirection>
+                    <EncoderType>0</EncoderType>
+                    <PosUnitName>degree</PosUnitName>
+                    <SyncCommandOption>0</SyncCommandOption>
+                    <ExternalEncoderRatio ExternalEncoderRatioEnable="0">1.000000</ExternalEncoderRatio>
+                    <SoftPositiveLimit SoftPositiveLimitEnable="0">720.000000</SoftPositiveLimit>
+                    <SoftNegativeLimit SoftNegativeLimitEnable="0">-720.000000</SoftNegativeLimit>
+                    <PicturesPath></PicturesPath>
+                    <PicturesHttp></PicturesHttp>
+                  </NMDInfo>
+                  <EcSlave Type="0" SlaveAddress="0" SlotNumber="0">
+                    <GUID></GUID>
+                    <CoeObjectOffset>#x0</CoeObjectOffset>
+                    <PdoMapOffset>#x0</PdoMapOffset>
+                  </EcSlave>
+                  <MainControlValue>
+                    <Position_1>0.000000</Position_1>
+                    <Position_2>0.000000</Position_2>
+                    <Halt>1</Halt>
+                    <P1P2_Repeat>0</P1P2_Repeat>
+                    <Dwell>500</Dwell>
+                  </MainControlValue>
+                  <AllControlValue>
+                    <AllPosition>0.000000</AllPosition>
+                    <AllVelocity>100.000000</AllVelocity>
+                  </AllControlValue>
+                </AxisConfig>
+                <MotionParaInfos>
+                  <MotionParaInfo Type="1" Num="#x0" Sub="0" Value="360.000000">Mechanical pitch (unit/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x1" Sub="0" Value="1">Mechanical revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x2" Sub="0" Value="10">Motor revolution</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x3" Sub="0" Value="16000">Encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x4" Sub="0" Value="0">Encoder direction (0:Not inverse, 1:Inverse)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x5" Sub="0" Value="0">Encoder type (0:Incremental, 1:Absolute)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="0" Value="0">Enable external encoder</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x6" Sub="1" Value="1">External encoder resolution (pulse/rev)</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x7" Sub="0" Value="0">Disable sync. when servo enable</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x8" Sub="0" Value="0.000000">Absolution position offset</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#xa" Sub="0" Value="-1">Motor ID assignment</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="0" Value="720.000000">Positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="1" Value="0">Enable positive software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x10" Sub="2" Value="-720.000000">Negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x10" Sub="3" Value="0">Enable negative software limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x11" Sub="0" Value="500.000000">Maximum velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x11" Sub="1" Value="1">Enable max. velocity limit</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x12" Sub="0" Value="5000.000000">Maximum acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x12" Sub="1" Value="1">Enable max. acceleration limit</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x20" Sub="0" Value="0">STOP profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x21" Sub="0" Value="500.000000">STOP deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x22" Sub="0" Value="1000.000000">STOP jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x23" Sub="0" Value="0">Halt buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x28" Sub="0" Value="0.000000">Base velocity</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x30" Sub="0" Value="0">Absolute or relative programming</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x31" Sub="0" Value="0">Profile type (0: T-Curve, 1:S-Curve)</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x32" Sub="0" Value="10.000000">Maximum velocity</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x33" Sub="0" Value="20.000000">Acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x34" Sub="0" Value="20.000000">deceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x35" Sub="0" Value="500.000000">Jerk</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x36" Sub="0" Value="0">Buffer mode</MotionParaInfo>
+                  <MotionParaInfo Type="0" Num="#x80" Sub="0" Value="20">EtherCAT CiA HOME method</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x81" Sub="0" Value="10.000000">EtherCAT CiA HOME speed search switch</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x82" Sub="0" Value="5.000000">EtherCAT CiA HOME speed search zero</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x83" Sub="0" Value="100.000000">EtherCAT CiA HOME acceleration</MotionParaInfo>
+                  <MotionParaInfo Type="1" Num="#x84" Sub="0" Value="0.000000">EtherCAT CiA HOME offset</MotionParaInfo>
+                </MotionParaInfos>
+              </Axis>
+            </Axes>
+          </Group>
+        </Groups>
+      </GroupAxis>
+      <IOEntry>
+        <InputEntry>
+        </InputEntry>
+        <OutputEntry>
+        </OutputEntry>
+      </IOEntry>
+    </NexMotion>
+    <RTask>
+    </RTask>
+    <MotionAnalyzer>
+    </MotionAnalyzer>
+  </Project>
+</NexMotionProject>
